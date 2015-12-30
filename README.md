@@ -1,10 +1,10 @@
-TabSelector Sample
+基于React的前端技术尝试
 ==================
 
-jQuery sample:
-http://supnate.github.io/react-tab-selector/tab_selector_jquery.html
 
-React sample:
-http://supnate.github.io/react-tab-selector/tab_selector_react.html
-
+效果图
+![](https://raw.githubusercontent.com/lenxeon/react/master/preview/01.png)
+![](https://raw.githubusercontent.com/lenxeon/react/master/preview/02.png)
+![](https://raw.githubusercontent.com/lenxeon/react/master/preview/03.png)
+![](https://raw.githubusercontent.com/lenxeon/react/master/preview/04.png)
 

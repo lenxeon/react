@@ -1,0 +1,67 @@
+.mod-view {
+  position: fixed;
+  z-index: 51;
+  top: 50px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(238, 238, 238, .96);
+
+  .mod-view-out-wrap {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0px;
+
+    .mod-view-in-wrap {
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0px;
+      overflow-y: auto;
+      .mod-view-body-wrap{
+        position: relative;
+        display: block;
+      }
+    }
+  }
+  .foot {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 29px;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, .07);
+    cursor: pointer;
+    text-align: center;
+    line-height: 25px;
+    background-color: #eee;
+    z-index: 1;
+  }
+}
+@-webkit-keyframes shake {
+  100% {
+    -webkit-transform: translateY(0);
+  }
+  90% {
+    -webkit-transform: translateY(-10px);
+  }
+}
+@-moz-keyframes shake {
+  100% {
+    -moz-transform: translateY(0);
+  }
+  90% {
+    -moz-transform: translateY(-10px);
+  }
+}
+/*.mod-view.shake {
+  -webkit-animation-name: shake;
+  -webkit-animation-duration: 50ms;
+  -moz--name: shake;
+  -moz-animation-duration: 50ms;
+}*/

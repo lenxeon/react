@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="./dist/css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./dist/css/tipsy.css">
+    <link rel="stylesheet" href="./dist/css/main.css">
+    <title>鱼骨北京科技有限公司@workin.me</title>
+  </head>
+  <body>
+  </body>
+    <script type="text/javascript" src="./dist/js/jquery.min.js"></script> 
+    <script type="text/javascript" src="./dist/js/store.min.js"></script> 
+    <script type="text/javascript" src="./dist/js/dragula.min.js"></script>
+    <script type="text/javascript" src="./dist/js/jquery.tipsy.js"></script>
+    <script type="text/javascript" src="./dist/js/jquery.select.js"></script>
+
+  	<script type="text/javascript" src="./dist/js/app.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    // $.fn.tipsy.defaults = {
+    //   delayIn: 0, // delay before showing tooltip (ms)
+    //   delayOut: 0, // delay before hiding tooltip (ms)
+    //   fade: false, // fade tooltips in/out?
+    //   fallback: '', // fallback text to use when no tooltip text
+    //   gravity: 'n', // gravity
+    //   html: false, // is tooltip content HTML?
+    //   live: true, // use live event support?
+    //   offset: 0, // pixel offset of tooltip from element
+    //   opacity: 0.8, // opacity of tooltip
+    //   title: 'title', // attribute/callback containing tooltip text
+    //   trigger: 'hover' // how tooltip is triggered - hover | focus | manual
+    // };
+
+      $("body").on("mouseenter", "[data-tip]", function() {
+        $(this).tipsy({
+          trigger: 'manual',
+          gravity: 's',
+          title: function() {
+            return this.getAttribute('data-tip');
+          }
+        });
+        $(this).tipsy("show");
+      });
+      $("body").on("mouseleave", "[data-tip]", function() {
+        $(this).tipsy("hide");
+      });
+    </script>
+</html>
+

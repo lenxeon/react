@@ -1,0 +1,38 @@
+@import "mixins";
+
+.button-groups {
+  box-shadow: 0 0px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0px 1px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+
+  button {
+    display: inline-block;
+    margin-left: -1px;
+    overflow: hidden;
+    border-color: #0c80ba;
+    float: left;
+    color: #666;
+
+    &:first-child {
+      margin-left: 0;
+    }
+    &:not(:first-child):not(:last-child) {
+      border-radius: 0;
+    }
+    &:last-child:not(:first-child) {
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+    }
+    &:first-child:not(:last-child) {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+    }
+    &.active {
+      color: #fff;
+      background-color: #007ddb !important
+    }
+  }
+}

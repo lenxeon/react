@@ -1,0 +1,65 @@
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.loading-init {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background: #383838;
+  -webkit-transition: all 218ms;
+  transition: all 218ms;
+}
+
+.loading-init.loaded-init {
+  opacity: 0;
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.loading-init .init-logo,.loading-init .init-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -60px;
+  margin-top: -60px;
+  width: 120px;
+  height: 120px;
+  background-image: url(https://dn-st.b0.upaiyun.com/account/my/static/images/init/init.5f73efbc.png);
+  background-repeat: no-repeat;
+  background-size: 120px 240px;
+}
+
+.loading-init .init-logo {
+  background-position: 0 0;
+}
+
+.loading-init .init-circle {
+  background-position: 0 -120px;
+  -webkit-animation: spin 1s infinite linear;
+  animation: spin 1s infinite linear;
+}

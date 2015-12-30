@@ -1,0 +1,121 @@
+.rct-switchbar {
+	display: inline-block;
+	padding: 0 10px;
+	background-color: #fff;
+	vertical-align: middle;
+	vertical-align: top;
+	text-align: center;
+	line-height: 30px;
+	height: 30px;
+	cursor: pointer;
+	position: relative;
+	border-radius: 2px;
+
+	&.shadow {
+		box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+		-moz-box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+		-webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+	}
+	.list-box {
+		margin-left: -10px;
+		position: absolute;
+		width: 170px;
+		background-color: #fff;
+		z-index: 4;
+		top: 36px;
+		text-align: left;
+		padding: 6px 0;
+		display: none;
+
+		li.item {
+			color: #555555;
+			padding-right: 10px;
+			height: 32px;
+			padding-left: 16px;
+			line-height: 32px;
+			word-break: break-all;
+			word-wrap: break-word;
+			padding-right: 10px;
+			width: 100%;
+			box-sizing: border-box;
+
+			.children {
+				position: absolute;
+				width: 177px;
+				height: 196px;
+				left: 169px;
+				top: 28px;
+				display: none;
+
+				.list-box {
+					margin: 0;
+					position: absolute;
+					width: 170px;
+					background-color: #fff;
+					z-index: 2;
+					top: 0;
+					text-align: left;
+					border: 1px #eee solid;
+					box-shadow: 0 0 5px #ccc;
+					padding: 6px 0;
+					left: 5px;
+				}
+			}
+			&:hover{
+				color: white;
+				background-color: #007ddb;
+				.children{
+					display: block;
+				}
+			};
+		}
+	}
+	&.open {
+		.list-box {
+			display: block;
+		}
+		.rct-overlay {
+			left: 0;
+		}
+	}
+}
+.switch-bar-group {
+	display: inline-block;
+	position: relative;
+
+	&.shadow {
+		box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+		-moz-box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+		-webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+	}
+	.rct-switchbar {
+		border-right: 1px solid #ccc;
+
+		&:hover {
+			background-color: #fafafa;
+		}
+		;
+
+		&.shadow {
+			box-shadow: none;
+			-moz-box-shadow: none;
+			-webkit-box-shadow: none;
+		}
+		&:first-child {
+		}
+		&:last-child {
+			border-right: 0px;
+		}
+		&:not(:first-child):not(:last-child) {
+			border-radius: 0;
+		}
+		&:last-child:not(:first-child) {
+			border-bottom-left-radius: 0;
+			border-top-left-radius: 0;
+		}
+		&:first-child:not(:last-child) {
+			border-bottom-right-radius: 0;
+			border-top-right-radius: 0;
+		}
+	}
+}

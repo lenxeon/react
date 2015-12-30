@@ -1,0 +1,213 @@
+<html> 
+    <head>
+    </head> 
+    <style> 
+        body{padding-top:50px;padding-left:100px;padding-right:150px;-webkit-user-select: none;} 
+        .fileDiv{float:left;width:100px;height:100px;text-align:center;line-height:100px;font-size:12px;border:1px solid #cccccc;margin-right:10px;margin-bottom:10px;} 
+        .active{border:1px solid #ff0000;background-color:#D6DFF7;}     
+
+.drag-mask{
+    position: absolute;
+    border: 1px solid rgb(19, 98, 180);
+    opacity: 0.5;
+    z-index: 99999;
+    top: 222px;
+    left: 311px;
+    width: 0px;
+    height: 0px;
+    display: none;
+    background-color: rgb(139, 191, 249);
+}
+
+    </style>
+
+    <script type="text/javascript" src="./dist/js/jquery.min.js"></script> 
+    <script type="text/javascript" src="./dist/js/jquery.select.js"></script>
+    <body> 
+      <div class="fileDiv">file1</div> 
+      <div class="fileDiv">file2</div> 
+      <div class="fileDiv">file3</div> 
+      <div class="fileDiv">file4</div> 
+      <div class="fileDiv">file5</div> 
+      <div class="fileDiv">file6</div> 
+      <div class="fileDiv">file7</div> 
+      <div class="fileDiv">file8</div> 
+      <div class="fileDiv">file9</div> 
+      <div class="fileDiv">file10</div> 
+      <div class="fileDiv">file11</div> 
+      <div class="fileDiv">file12</div> 
+      <div class="fileDiv">file13</div> 
+      <div class="fileDiv">file14</div> 
+      <div class="fileDiv">file15</div> 
+      <div class="fileDiv">file16</div> 
+      <div class="fileDiv">file17</div> 
+      <div class="fileDiv">file18</div> 
+      <div class="fileDiv">file19</div> 
+      <div class="fileDiv">file20</div> 
+      <div class="fileDiv">file21</div> 
+      <div class="fileDiv">file22</div> 
+      <div class="fileDiv">file23</div> 
+      <div class="fileDiv">file24</div> 
+      <div class="fileDiv">file25</div> 
+      <div class="fileDiv">file26</div> 
+      <div class="fileDiv">file27</div> 
+      <div class="fileDiv">file28</div> 
+      <div class="fileDiv">file29</div> 
+      <div class="fileDiv">file30</div> 
+      <div class="fileDiv">file31</div> 
+      <div class="fileDiv">file32</div> 
+      <div class="fileDiv">file33</div> 
+      <div class="fileDiv">file34</div> 
+      <div class="fileDiv">file35</div> 
+      <div class="fileDiv">file36</div> 
+      <div class="fileDiv">file37</div> 
+      <div class="fileDiv">file38</div> 
+      <div class="fileDiv">file39</div> 
+      <div class="fileDiv">file40</div> 
+      <div class="fileDiv">file41</div> 
+      <div class="fileDiv">file42</div> 
+      <div class="fileDiv">file43</div> 
+      <div class="fileDiv">file44</div> 
+      <div class="fileDiv">file45</div> 
+      <div class="fileDiv">file46</div> 
+      <div class="fileDiv">file47</div> 
+      <div class="fileDiv">file48</div> 
+      <div class="fileDiv">file49</div> 
+      <div class="fileDiv">file50</div> 
+      <div class="fileDiv">file51</div> 
+      <div class="fileDiv">file52</div> 
+      <div class="fileDiv">file53</div> 
+      <div class="fileDiv">file54</div> 
+      <div class="fileDiv">file55</div> 
+      <div class="fileDiv">file56</div> 
+      <div class="fileDiv">file57</div> 
+      <div class="fileDiv">file58</div> 
+      <div class="fileDiv">file59</div> 
+      <div class="fileDiv">file60</div> 
+      <div class="fileDiv">file1</div> 
+      <div class="fileDiv">file2</div> 
+      <div class="fileDiv">file3</div> 
+      <div class="fileDiv">file4</div> 
+      <div class="fileDiv">file5</div> 
+      <div class="fileDiv">file6</div> 
+      <div class="fileDiv">file7</div> 
+      <div class="fileDiv">file8</div> 
+      <div class="fileDiv">file9</div> 
+      <div class="fileDiv">file10</div> 
+      <div class="fileDiv">file11</div> 
+      <div class="fileDiv">file12</div> 
+      <div class="fileDiv">file13</div> 
+      <div class="fileDiv">file14</div> 
+      <div class="fileDiv">file15</div> 
+      <div class="fileDiv">file16</div> 
+      <div class="fileDiv">file17</div> 
+      <div class="fileDiv">file18</div> 
+      <div class="fileDiv">file19</div> 
+      <div class="fileDiv">file20</div> 
+      <div class="fileDiv">file21</div> 
+      <div class="fileDiv">file22</div> 
+      <div class="fileDiv">file23</div> 
+      <div class="fileDiv">file24</div> 
+      <div class="fileDiv">file25</div> 
+      <div class="fileDiv">file26</div> 
+      <div class="fileDiv">file27</div> 
+      <div class="fileDiv">file28</div> 
+      <div class="fileDiv">file29</div> 
+      <div class="fileDiv">file30</div> 
+      <div class="fileDiv">file31</div> 
+      <div class="fileDiv">file32</div> 
+      <div class="fileDiv">file33</div> 
+      <div class="fileDiv">file34</div> 
+      <div class="fileDiv">file35</div> 
+      <div class="fileDiv">file36</div> 
+      <div class="fileDiv">file37</div> 
+      <div class="fileDiv">file38</div> 
+      <div class="fileDiv">file39</div> 
+      <div class="fileDiv">file40</div> 
+      <div class="fileDiv">file41</div> 
+      <div class="fileDiv">file42</div> 
+      <div class="fileDiv">file43</div> 
+      <div class="fileDiv">file44</div> 
+      <div class="fileDiv">file45</div> 
+      <div class="fileDiv">file46</div> 
+      <div class="fileDiv">file47</div> 
+      <div class="fileDiv">file48</div> 
+      <div class="fileDiv">file49</div> 
+      <div class="fileDiv">file50</div> 
+      <div class="fileDiv">file51</div> 
+      <div class="fileDiv">file52</div> 
+      <div class="fileDiv">file53</div> 
+      <div class="fileDiv">file54</div> 
+      <div class="fileDiv">file55</div> 
+      <div class="fileDiv">file56</div> 
+      <div class="fileDiv">file57</div> 
+      <div class="fileDiv">file58</div> 
+      <div class="fileDiv">file59</div> 
+      <div class="fileDiv">file60</div> 
+      <div class="fileDiv">file1</div> 
+      <div class="fileDiv">file2</div> 
+      <div class="fileDiv">file3</div> 
+      <div class="fileDiv">file4</div> 
+      <div class="fileDiv">file5</div> 
+      <div class="fileDiv">file6</div> 
+      <div class="fileDiv">file7</div> 
+      <div class="fileDiv">file8</div> 
+      <div class="fileDiv">file9</div> 
+      <div class="fileDiv">file10</div> 
+      <div class="fileDiv">file11</div> 
+      <div class="fileDiv">file12</div> 
+      <div class="fileDiv">file13</div> 
+      <div class="fileDiv">file14</div> 
+      <div class="fileDiv">file15</div> 
+      <div class="fileDiv">file16</div> 
+      <div class="fileDiv">file17</div> 
+      <div class="fileDiv">file18</div> 
+      <div class="fileDiv">file19</div> 
+      <div class="fileDiv">file20</div> 
+      <div class="fileDiv">file21</div> 
+      <div class="fileDiv">file22</div> 
+      <div class="fileDiv">file23</div> 
+      <div class="fileDiv">file24</div> 
+      <div class="fileDiv">file25</div> 
+      <div class="fileDiv">file26</div> 
+      <div class="fileDiv">file27</div> 
+      <div class="fileDiv">file28</div> 
+      <div class="fileDiv">file29</div> 
+      <div class="fileDiv">file30</div> 
+      <div class="fileDiv">file31</div> 
+      <div class="fileDiv">file32</div> 
+      <div class="fileDiv">file33</div> 
+      <div class="fileDiv">file34</div> 
+      <div class="fileDiv">file35</div> 
+      <div class="fileDiv">file36</div> 
+      <div class="fileDiv">file37</div> 
+      <div class="fileDiv">file38</div> 
+      <div class="fileDiv">file39</div> 
+      <div class="fileDiv">file40</div> 
+      <div class="fileDiv">file41</div> 
+      <div class="fileDiv">file42</div> 
+      <div class="fileDiv">file43</div> 
+      <div class="fileDiv">file44</div> 
+      <div class="fileDiv">file45</div> 
+      <div class="fileDiv">file46</div> 
+      <div class="fileDiv">file47</div> 
+      <div class="fileDiv">file48</div> 
+      <div class="fileDiv">file49</div> 
+      <div class="fileDiv">file50</div> 
+      <div class="fileDiv">file51</div> 
+      <div class="fileDiv">file52</div> 
+      <div class="fileDiv">file53</div> 
+      <div class="fileDiv">file54</div> 
+      <div class="fileDiv">file55</div> 
+      <div class="fileDiv">file56</div> 
+      <div class="fileDiv">file57</div> 
+      <div class="fileDiv">file58</div> 
+      <div class="fileDiv">file59</div> 
+      <div class="fileDiv">file60</div> 
+    </body>     
+    <script> 
+      $(document.body).dragselect({
+        dragItem: '.fileDiv'
+      })
+    </script> 
+</html>

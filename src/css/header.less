@@ -1,0 +1,175 @@
+@import "mixins";
+
+#header {
+    background: fade(#007ddb, 100%) !important;
+    -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, .5);
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .5);
+    height: 50px;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    left: 0px;
+    z-index: 1030;
+    overflow: hidden;
+    .user-select(none);
+
+    /* logo */
+    .pure-menu-heading {
+        color: white;
+
+        .fa {
+            margin-right: 7px;
+            margin-top: -2px;
+        }
+    }
+    .left-menus {
+        .pure-menu-item {
+            a {
+                color: white;
+                vertical-align: top;
+                position: relative;
+                display: inline-block;
+                padding: 0;
+                width: 80px;
+                line-height: 50px;
+                height: 50px;
+                text-align: center;
+                font-size: 14px;
+                opacity: .9;
+                white-space: normal;
+                overflow: hidden;
+                text-decoration: none;
+
+                &:hover, &:active, &:focus, &:visited {
+                    background: transparent !important;
+                }
+                &:hover {
+                    background: spin(#006cc4, 2) !important;
+                }
+            }
+            &.pure-menu-selected {
+                background: #006cc4 !important;
+
+                a {
+                    &:hover, &:active, &:focus, &:visited {
+                        background: transparent !important;
+                    }
+                }
+            }
+        }
+    }
+    .right-menus {
+        position: absolute;
+        right: 120px;
+        top: 0;
+
+        .pure-menu-item {
+            a {
+                color: white;
+                vertical-align: top;
+                position: relative;
+                display: inline-block;
+                padding: 0;
+                width: 80px;
+                line-height: 50px;
+                height: 50px;
+                text-align: center;
+                font-size: 14px;
+                opacity: .9;
+                white-space: normal;
+                overflow: hidden;
+                text-decoration: none;
+
+                &:hover, &:active, &:focus, &:visited {
+                    background: transparent !important;
+                }
+                &:hover {
+                    background: spin(#006cc4, 2) !important;
+                }
+            }
+            &.pure-menu-selected {
+                background: #006cc4 !important;
+
+                a {
+                    &:hover, &:active, &:focus, &:visited {
+                        background: transparent !important;
+                    }
+                }
+            }
+        }
+        .user {
+            .avatar {
+                width: 32px;
+                padding: 9px 0;
+                vertical-align: middle;
+
+                img {
+                    height: 32px;
+                    width: 32px;
+                    border-radius: 50%;
+                    vertical-align: middle;
+                }
+            }
+            .name {
+                margin-left: 10px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                vertical-align: middle;
+                white-space: nowrap;
+                max-width: 60px;
+                display: inline-block;
+                color: white;
+            }
+        }
+        .message {
+            .fa-bell {
+                color: white;
+                margin-left: 30px;
+            }
+        }
+        .create {
+        }
+    }
+}
+.s-skin-container {
+    position: fixed;
+    _position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    min-width: 1000px;
+    z-index: -10;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    zoom: 1;
+}
+
+/** 重新定义pure-menu **/
+.pure-menu {
+    .pure-menu-has-children {
+        span.more {
+            background-color: transparent;
+            cursor: pointer;
+            color: white;
+            height: 50px;
+            line-height: 50px;
+            display: inline-block;
+            padding: 0;
+            width: 80px;
+            text-align: center;
+        }
+        .pure-menu-children {
+            background-color: #007DDB;
+
+            li {
+                a {
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+}
